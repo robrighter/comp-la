@@ -125,7 +125,7 @@ def question_4():
     print("Answer: The next number after 9 is "+ str(get_next_number_in_sequence(9)))
     print("\n")
 
-def question_5a():
+def question_5a_and_b():
     # determine which numbers in the range 1 to 100 inclusive take the most iterations to 1
     highest_num_iterations = 1
     starting_numbers = [1]
@@ -138,6 +138,8 @@ def question_5a():
             starting_numbers.append(i)
     print("Question 5a: For all the numbers from 1-10 inclusive, which number or numbers take the most steps to get to 1?")
     print("The number in the range 1-100 (inclusive) that takes the most steps to get to 1 is: " + str(starting_numbers) + ".")
+    print("\n")
+    print("Question 5b: How many steps are required for 5a?")
     print("It requires "+ str(highest_num_iterations) + " steps to get to 1.")
     print("\n")
 
@@ -164,7 +166,7 @@ def question_5c_and_d():
 
 
 question_4()
-question_5a()
+question_5a_and_b()
 question_5c_and_d()
 
 
