@@ -87,4 +87,20 @@ def question_4():
     print("The value of r = " + str(r))
 
 
-question_4()
+
+def question_5a():
+    # count multiplication operations
+    acc = 0
+    for i in range(1,27):
+        acc = acc+i
+    print(acc)
+
+def question_5b():
+    # calculate the multiplication operations for p(7)
+    ret = ""
+    for i in range(26, 0, -1):
+        ret = ret + " + a_{"+str(27-i)+ "} " + str(7**i)
+    return ret
+
+
+print(question_5b())
